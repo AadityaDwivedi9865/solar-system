@@ -1,0 +1,209 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orbit {
+    position: absolute;
+    border: 1px dashed white;
+    border-radius: 50%;
+    animation: rotate 1s infinite linear;
+}
+.sun{
+    background-color: yellow;
+    width: 8vw;
+    height: 8vw;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0 0 50px yellow;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+ .mercury{
+    background-color: orange;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    font-size: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: mercury 3s linear infinite;
+}
+
+.venus{
+    background-color: chocolate;
+    width: 2vw;
+    height: 2vw;
+    font-size: 10%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: venus 5s linear infinite;
+}
+
+.earth{
+    background-color: rgb(0, 238, 255);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: earth 7s linear infinite;
+}
+.mars{
+    background-color: red;
+    width: 1.8vw;
+    height: 1.8vw;
+    border-radius: 50%;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: mars 9s linear infinite;
+}
+.jupiter{
+    background-color: rgb(127, 10, 10);
+    width: 3vw;
+    height: 3vw;
+    font-size: .5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: jupiter 12s linear infinite;
+}
+.saturn{
+    background-color: rgb(159, 70, 7);
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: saturn 15s linear infinite;
+}
+.uranus{
+   background-color: rgb(131, 194, 215);
+   width: 2vw;
+    height: 2vw;
+   border-radius: 50%;
+   font-size: .5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+    animation: uranus 18s linear infinite;
+}
+.neptune{
+    background-color: lightblue;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: neptune 20s linear infinite;
+}
+    
+@keyframes mercury{
+    from{
+        transform: rotate(0deg) translate(6.25rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(6.25rem) rotate(-360deg);
+    }
+}
+ 
+@keyframes venus{
+    from{
+        transform: rotate(0deg) translate(8.125rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(8.125rem) rotate(-360deg);
+    }
+}
+ 
+@keyframes earth{
+    from{
+        transform: rotate(0deg) translate(11.563rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(11.563rem) rotate(-360deg);
+    }
+}
+
+
+
+@keyframes mars{
+    from{
+        transform: rotate(0deg) translate(15rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(15rem) rotate(-360deg);
+    }
+}
+@keyframes jupiter{
+    from{
+        transform: rotate(0deg) translate(18.75rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(18.75rem) rotate(-360deg);
+    }
+}
+@keyframes saturn{
+    from{
+        transform: rotate(0deg) translate(21.25rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(21.25rem) rotate(-360deg);
+    }
+}
+@keyframes uranus{
+    from{
+        transform: rotate(0deg) translate(23.75rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(23.75rem) rotate(-360deg);
+    }
+}
+@keyframes neptune{
+    from{
+        transform: rotate(0deg) translate(26.25rem) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(26.25rem) rotate(-360deg);
+    }
+}
+
+ 
